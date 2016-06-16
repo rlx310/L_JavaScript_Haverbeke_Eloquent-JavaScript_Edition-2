@@ -1,16 +1,16 @@
 //
 
-var sizeX = 8;
-var sizeY = 8;
-
+var size = 8;
 var board = "";
 
-for (var y = 0; y < sizeY; y++) {
-    for (var x = 0; x < sizeX; x++) {
-        if ((x + y) % 2 === 0)
+for (var y = 0; y < size; y++) {
+    for (var x = 0; x < size; x++) {
+        if ((x + y) % 2 == 0) {
             board += " ";
-        else
+        }
+        else {
             board += "#";
+        }
     }
     board += "\n";
 }

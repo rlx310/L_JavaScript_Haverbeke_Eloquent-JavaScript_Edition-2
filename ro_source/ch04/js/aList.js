@@ -3,7 +3,10 @@
 function arrayToList(array) {
     var list = null;
     for (var i = array.length - 1; i >= 0; i--) {
-        list = {value: array[i], rest: list};
+        list = {
+            value: array[i],
+            rest: list
+        }
     }
     return list;
 }
@@ -17,7 +20,10 @@ function listToArray(list) {
 }
 
 function prepend(value, list) {
-    return {value: value, rest: list};
+    return {
+        value: value,
+        rest: list
+    };
 }
 
 function nth(list, n) {
@@ -31,6 +37,7 @@ function nth(list, n) {
         return nth(list.rest, n - 1);
     }
 }
+
 console.log(arrayToList([10, 20]));
 console.log(listToArray(arrayToList([10, 20, 30])));
 console.log(prepend(10, prepend(20, null)));

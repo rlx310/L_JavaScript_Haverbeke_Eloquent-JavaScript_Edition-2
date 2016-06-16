@@ -1,23 +1,16 @@
 //
 
-function countBs(s) {
-    var counter = 0;
-    for (var i = 0; i < s.length; i++) {
-        if (s.charAt(i) === "B") {
-            counter++;
-        }
+function countChar(str) {
+    var counted = 0;
+    for (var i = 0; i < string.length; i++) {
+        if (str.charAt(i) == ch)
+            counted += 1;
     }
-    return counter;
+    return counted;
 }
 
-function countChar(s, c) {
-    var counter = 0;
-    for (var i = 0; i < s.length; i++) {
-        if (s.charAt(i) === c) {
-            counter++
-        }
-    }
-    return counter;
+function countBs(string) {
+    return countChar(string, "B");
 }
 
 console.log(countBs("BBC"));

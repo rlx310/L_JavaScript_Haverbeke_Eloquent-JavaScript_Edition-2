@@ -1,12 +1,12 @@
 //
 
-for (var n = 1; n <= 100; n++) {
+for (var i = 1; i <= 100; i++) {
     var result = "";
-    if (n % 3 === 0) {
+    if (i % 3 === 0) {
         result += "Fizz";
     }
-    if (n % 5 === 0) {
+    if (i % 5 === 0) {
         result += "Buzz";
     }
-    console.log(result || n);
+    console.log(result || i);
 }

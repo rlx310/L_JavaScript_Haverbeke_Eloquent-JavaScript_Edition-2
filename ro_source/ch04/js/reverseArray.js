@@ -1,12 +1,13 @@
 //
 
 function reverseArray(array) {
-    var result = [];
+    var output = [];
     for (var i = array.length - 1; i >= 0; i--) {
-        result.push(array[i]);
+        output.push(array[i]);
     }
-    return result;
+    return output;
 }
+
 function reverseArrayInPlace(array) {
     for (var i = 0; i < Math.floor(array.length / 2); i++) {
         var old = array[i];
@@ -17,7 +18,6 @@ function reverseArrayInPlace(array) {
 }
 
 console.log(reverseArray(["A", "B", "C"]));
-
 var arrayValue = [1, 2, 3, 4, 5];
 reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
