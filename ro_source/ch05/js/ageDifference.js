@@ -1,6 +1,6 @@
 //
 
-var ancestry = JSON.parse(ANCESTRY_FILE);
+ancestry = JSON.parse(ANCESTRY_FILE);
 
 function average(array) {
     function plus(a, b) {
@@ -19,5 +19,4 @@ var differences = ancestry.filter(function(person) {
 }).map(function(person) {
     return person.born - byName[person.mother].born;
 });
-
 console.log(average(differences));

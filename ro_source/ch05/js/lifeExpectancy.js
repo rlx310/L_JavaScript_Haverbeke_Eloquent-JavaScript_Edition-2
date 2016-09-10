@@ -1,6 +1,6 @@
 //
 
-var ancestry = JSON.parse(ANCESTRY_FILE);
+ancestry = JSON.parse(ANCESTRY_FILE);
 
 function average(array) {
     function plus(a, b) {
@@ -26,10 +26,10 @@ function groupBy(array, groupOf) {
 var byCentury = groupBy(ancestry, function(person) {
     return Math.ceil(person.died / 100);
 });
-
 for (var century in byCentury) {
     var ages = byCentury[century].map(function(person) {
         return person.died - person.born;
     });
     console.log(century + ": " + average(ages));
 }
+
